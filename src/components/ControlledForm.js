@@ -5,7 +5,9 @@ export class ControlledForm extends Component {
         super(props)
         
         this.state = {
-            name: ""
+            name: "",
+            category: "",
+            comments: ""
         }
     }
 
@@ -18,15 +20,30 @@ export class ControlledForm extends Component {
     render() {
             return (
                 <div>
+                    <h2>Pleae fill out the form below:</h2>
                     <form>
-                        <label htmlFor="id-name">Your Name:</label>
-                        <input
-                            onChange={this.handleNameChange}
-                            value={this.state.name}
-                            id="id-name"
-                            name="name"
-                            type="text"
-                        />
+                        <div>
+                            <label htmlFor="id-name">Your Name:</label>
+                            <input
+                                onChange={this.handleNameChange}
+                                value={this.state.name}
+                                id="id-name"
+                                name="name"
+                                type="text"
+                            />
+                        </div>
+                        <div>
+                        <label htmlFor="id-cat">Query Category:</label>
+                            <select id="id-cat" name="category">
+                                <option value="website">Website issue</option>
+                                <option value="order">Order issue</option>
+                                <option value="general">General inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label htmlFor="id-comments">Comments:</label>
+                            <textarea id="id-comments" name="comments" />
+                        </div>
                         <input type="submit" value="Submit" />
                     </form>
                 </div>
