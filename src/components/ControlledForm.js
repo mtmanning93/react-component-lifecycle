@@ -6,7 +6,7 @@ export class ControlledForm extends Component {
         
         this.state = {
             name: "",
-            category: "",
+            category: "website",
             comments: ""
         }
     }
@@ -17,11 +17,29 @@ export class ControlledForm extends Component {
         })
     }
 
+    handleSelection = (event) => {
+        this.setState({
+            category: event.target.value
+        })
+    }
+
+    handleComments = (event) => {
+        this.setState({
+            comments: event.target.value
+        })
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault()
+        console.log(this.state)
+        // A simple way to prevent form from refrshing page on submit
+    }
+
     render() {
             return (
                 <div>
                     <h2>Pleae fill out the form below:</h2>
-                    <form>
+                    <form onSubmit={this.handleSubmit}>
                         <div>
                             <label htmlFor="id-name">Your Name:</label>
                             <input
@@ -34,7 +52,7 @@ export class ControlledForm extends Component {
                         </div>
                         <div>
                         <label htmlFor="id-cat">Query Category:</label>
-                            <select id="id-cat" name="category">
+                            <select onChange={this.handleSelection} id="id-cat" name="category">
                                 <option value="website">Website issue</option>
                                 <option value="order">Order issue</option>
                                 <option value="general">General inquiry</option>
@@ -42,7 +60,7 @@ export class ControlledForm extends Component {
                         </div>
                         <div>
                             <label htmlFor="id-comments">Comments:</label>
-                            <textarea id="id-comments" name="comments" />
+                            <textarea onChange={this.handleComments} id="id-comments" name="comments" />
                         </div>
                         <input type="submit" value="Submit" />
                     </form>
