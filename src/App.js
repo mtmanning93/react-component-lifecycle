@@ -1,9 +1,10 @@
 import "./App.css";
-import ControlledForm from "./components/ControlledForm";
+import ControlledFormHooks from "./components/ControlledFormHooks";
+// import ControlledForm from "./components/ControlledForm";
 // import LifeCyclesCDM from "./components/LifeCyclesCDM";
 // import LifeCyclesCDU from "./components/LifeCyclesCDU";
-import LifeCyclesCWU from "./components/LifeCyclesCWU";
-import UncontrolledForm from "./components/UncontrolledForm";
+// import LifeCyclesCWU from "./components/LifeCyclesCWU";
+// import UncontrolledForm from "./components/UncontrolledForm";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <LifeCyclesCDU /> */}
       {/* <LifeCyclesCWU /> */}
       {/* <ControlledForm /> */}
-      <UncontrolledForm />
+      {/* <UncontrolledForm /> */}
+      <ControlledFormHooks />
     </div>
   )
 }
