@@ -1,5 +1,6 @@
 import "./App.css";
-import ControlledFormHooks from "./components/ControlledFormHooks";
+// import ControlledFormHooks from "./components/ControlledFormHooks";
+import UseStateWithArray from "./components/UseStateWithArray";
 // import ControlledForm from "./components/ControlledForm";
 // import LifeCyclesCDM from "./components/LifeCyclesCDM";
 // import LifeCyclesCDU from "./components/LifeCyclesCDU";
@@ -14,7 +15,8 @@ function App() {
       {/* <LifeCyclesCWU /> */}
       {/* <ControlledForm /> */}
       {/* <UncontrolledForm /> */}
-      <ControlledFormHooks />
+      {/* <ControlledFormHooks /> */}
+      <UseStateWithArray />
     </div>
   )
 }
