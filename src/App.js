@@ -1,5 +1,6 @@
 import "./App.css";
-import UseStateWithObjects from "./components/UseStateWithObjects";
+import HTTPRequests from "./components/HTTPRequests";
+// import UseStateWithObjects from "./components/UseStateWithObjects";
 // import ControlledFormHooks from "./components/ControlledFormHooks";
 // import UseStateWithArray from "./components/UseStateWithArray";
 // import ControlledForm from "./components/ControlledForm";
@@ -18,7 +19,8 @@ function App() {
       {/* <UncontrolledForm /> */}
       {/* <ControlledFormHooks /> */}
       {/* <UseStateWithArray /> */}
-      <UseStateWithObjects />
+      {/* <UseStateWithObjects /> */}
+      <HTTPRequests />
     </div>
   )
 }
