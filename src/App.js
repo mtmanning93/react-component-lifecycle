@@ -1,26 +1,11 @@
 import "./App.css";
-import HTTPRequests from "./components/HTTPRequests";
-// import UseStateWithObjects from "./components/UseStateWithObjects";
-// import ControlledFormHooks from "./components/ControlledFormHooks";
-// import UseStateWithArray from "./components/UseStateWithArray";
-// import ControlledForm from "./components/ControlledForm";
-// import LifeCyclesCDM from "./components/LifeCyclesCDM";
-// import LifeCyclesCDU from "./components/LifeCyclesCDU";
-// import LifeCyclesCWU from "./components/LifeCyclesCWU";
-// import UncontrolledForm from "./components/UncontrolledForm";
+import HTTPHooks from "./components/HTTPHooks";
 
 function App() {
   return (
     <div className="App">
-      {/* <LifeCyclesCDM /> */}
-      {/* <LifeCyclesCDU /> */}
-      {/* <LifeCyclesCWU /> */}
-      {/* <ControlledForm /> */}
-      {/* <UncontrolledForm /> */}
-      {/* <ControlledFormHooks /> */}
-      {/* <UseStateWithArray /> */}
-      {/* <UseStateWithObjects /> */}
-      <HTTPRequests />
+      {/* <HTTPPost /> */}
+      <HTTPHooks />
     </div>
   )
 }
